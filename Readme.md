@@ -1,15 +1,20 @@
-<h>Proyek Deteksi dan Penghitungan Telur Otomatis menggunakan YOLOv8</h>
+# 🥚 Penghitung Telur Real-Time dengan YOLOv8
 
-📖 Deskripsi Proyek
-Proyek ini adalah sistem computer vision yang dirancang untuk mendeteksi dan menghitung telur secara otomatis saat melewati sebuah jalur atau konveyor. Sistem ini memanfaatkan model deteksi objek state-of-the-art, YOLOv8 (You Only Look Once), yang telah di-train secara khusus menggunakan dataset telur untuk mencapai akurasi yang tinggi.
+Selamat datang di Proyek Penghitung Telur Real-Time! Ini adalah sebuah sistem cerdas yang dirancang untuk mendeteksi, melacak, dan menghitung telur secara otomatis menggunakan umpan video dari webcam. Proyek ini dibangun dengan teknologi *computer vision* modern seperti **YOLOv8**, **OpenCV**, dan pustaka **Supervision**.
 
-Tujuan utama dari proyek ini adalah untuk mengotomatisasi proses penghitungan telur di lingkungan produksi, mengurangi potensi human error, dan meningkatkan efisiensi. Sistem ini dapat diimplementasikan pada video pre-recorded maupun live stream dari kamera.
+## 🚀 Fitur Utama
 
-✨ Fitur Utama
-- Deteksi Telur Akurat: Menggunakan model YOLOv8 yang telah di-train untuk mengenali objek telur dengan presisi tinggi.
+-   🎯 **Deteksi Akurat**: Menggunakan model YOLOv8 yang telah dilatih khusus untuk mengenali telur dengan presisi tinggi di berbagai kondisi.
+-   👣 **Pelacakan Objek (Tracking)**: Setiap telur yang terdeteksi diberi ID unik menggunakan algoritma ByteTrack, memungkinkannya untuk dilacak secara konsisten bahkan saat bergerak.
+-   🔢 **Penghitungan Otomatis**: Sebuah garis virtual di layar berfungsi sebagai pemicu. Setiap kali telur yang dilacak melewatinya, total hitungan akan bertambah secara otomatis.
+-   🖥️ **Visualisasi Real-Time**: Tampilan antarmuka yang informatif, lengkap dengan kotak pembatas (*bounding box*), ID pelacakan, garis virtual, dan total hitungan yang selalu diperbarui.
 
-- Penghitungan Otomatis: Mampu menghitung jumlah telur yang melewati garis virtual yang telah ditentukan dalam frame video.
+## 🛠️ Teknologi yang Digunakan
 
-- Implementasi Fleksibel: Dapat dijalankan pada file video, gambar, maupun real-time feed dari kamera IP atau webcam.
+Proyek ini dibangun menggunakan beberapa pustaka dan kerangka kerja:
 
-- Visualisasi Hasil: Menampilkan video hasil deteksi dengan bounding box di sekitar telur dan jumlah total telur yang terhitung.
+-   [**Python 3.10**](https://www.python.org/)
+-   [**Ultralytics YOLOv8**](https://github.com/ultralytics/ultralytics)
+-   [**OpenCV-Python**](https://opencv.org/)
+-   [**Supervision**](https://github.com/roboflow/supervision)
+-   [**NumPy**](https://numpy.org/)
